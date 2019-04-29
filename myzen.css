@@ -1,0 +1,190 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+* {
+    box-sizing: border;
+}
+html, body {
+  padding: 0;
+  margin: 2px;
+}
+body {
+  color: #325050;
+  background-color: #fff;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 16px;
+}
+h1, h2 {
+    /* padding: 0 50px 0px 100px; */
+    font-family: 'Julius Sans One', sans-serif;
+}
+.content1, .content2, .content3 {
+    padding: 40px 50px 40px 100px;
+}
+nav {
+    color: lightgrey;
+}
+@media (min-width: 1001px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 250px auto auto auto auto auto 40px;
+        grid-gap: 0px;
+        grid-template-areas: 
+        "hh hh hh hh hh hh hh hh m1 m1 m1 m1"
+        "c1 c1 c1 c1 c1 c1 c1 c1 m2 m2 m2 m2"
+        "c2 c2 c2 c2 c2 c2 c2 c2 m3 m3 m3 m3"
+        "c3 c3 c3 c3 c3 c3 c3 c3 m4 m4 m4 m4"
+        "au au au au au au au au au au au au"
+        "au au au au au au au au au au au au"
+        "au au au au au au au au au au au au"
+        "ff ff ff ff ff ff ff ff ff ff ff ff"
+    }
+}
+.header {
+    grid-area: hh;
+    padding: 50px 10px 50px 220px;
+    color: #fff;
+    font-size: 150%;
+    line-height: 100%;
+    background: #2d6360 50% 0 url(http://www.csszengarden.com/214/huntington.jpg) no-repeat; /* old IE fallback */
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    text-align: left;
+}
+h3 {
+    color: rgb(153, 206, 201)
+}
+.menu1 {
+    grid-area: m1;
+    color: #fff;
+    font-size: 16px;
+    background-color: rgb(41, 92, 81);
+    padding: 80px 20px 80px 20px;
+    text-align: center;
+    justify-content: center;
+}
+a {
+    color: rgb(119, 118, 118);
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+.menu2 {
+    grid-area: m2;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+    padding: 60px 20px 60px 50px;
+    background-color: rgb(235, 233, 233);
+}
+li {
+    border-top: solid 1px rgb(180, 180, 180);
+    list-style: none;
+}
+.menu3 {
+    grid-area: m3;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 20px 100px 50px 20px;
+    background-color: rgba(138,188,159,0.6);
+    background-image: url(http://www.csszengarden.com/214/bamboo.png);
+}
+.menu4 {
+    grid-area: m4;
+    background-color: rgb(235, 233, 233);
+}
+.content1 {
+    grid-area: c1;
+    line-height: 200%;
+}
+.content2 {
+    grid-area: c2;
+    line-height: 200%;
+    background-attachment: scroll, scroll, fixed;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+}
+.content3 {
+    grid-area: c3;
+    line-height: 200%;
+}
+.author > a {
+    color: rgb(200, 240, 236);
+    font-size: 32px;
+    text-decoration: none;
+    font-style: normal;
+}
+.author > a:hover {
+    text-decoration: underline;
+}
+.author {
+    grid-area: au;
+    padding: 80px 150px 80px 150px;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: rgb(153, 206, 201);
+    text-align: center;
+    font-size: 32px;
+    font-style: italic;
+    line-height: 200%;
+    background-color: #217179;
+    background-image: url(http://www.csszengarden.com/214/koi.jpg);    
+}
+.footer {
+    grid-area: ff;
+    padding: 50px 10px 50px 30px;
+    color: #fff;
+    background-color: #134347;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1);
+        grid-template-rows: 200px 70px auto auto auto auto 120px auto auto;
+        grid-gap: 0px;
+        grid-template-areas: 
+        "hh"
+        "m1"
+        "c1"
+        "c2"
+        "c3"
+        "au"
+        "ff"
+        "m2"
+        "m3"
+    }
+    .header {
+        font-size: 100%;
+        text-align: center;
+        padding: 50px 100px 50px 150px;
+    }
+    .author > a {
+        color: rgb(215, 243, 240);
+        font-size: 24px;
+    }
+    .author {
+        font-size: 24px;
+        padding: 50px 70px 50px 70px;
+    }
+    .menu1 {
+        grid-area: m1;
+        font-size: 7px;
+        text-align: center;
+        padding: 0;
+        justify-content: center
+    }
+    .menu2, .menu3 {
+        column-count: 2;
+    }
+    h2 {
+        padding: 10px 60px 0px 0px;
+        font-size: 20px;
+    }
+    .content1, .content2, .content3 {
+        padding: 20px 60px 0px 80px;
+        font-size: 14px;
+        line-height: 180%;
+    }
+}

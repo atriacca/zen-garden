@@ -1,0 +1,373 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'verdemoderna';
+    src: url(resources/verdemoderna.woff) format('woff2');
+}
+/* html, body {
+  padding: 0;
+  margin: 0px;
+} */
+body {
+  color: #325050;
+  background-color: rgb(242, 242, 242);
+  font-family: 'Libre Baskerville', sans-serif;
+}
+.verdemoderna {
+    font-family: 'verdemoderna';
+    color: rgba(137, 165, 101, 0.9);
+    background-color: rgba(137, 165, 101, 0.4);
+    padding: 2px;
+    margin: 0px 4px;
+}
+.julius {
+    color: rgb(119, 118, 118, 0.7);
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 0px;
+    font-size: 50px;
+    font-weight: 500;
+    padding: 10px 10px 0px 260px;
+}
+h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 28px;
+    margin-top: 35px;
+}
+h3 {
+    font-family: 'Libre Baskerville', sans-serif;
+    color: rgb(153, 206, 201);
+    color: rgb(191, 201, 187);
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 35px 10px 350px 270px;
+    margin: 0px;
+}
+.dotted {
+    text-decoration: underline dotted;
+    font-size: .9em;
+}
+h4 {
+    margin: 25px 0 5px 0;
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgb(138, 138, 138);
+    font-size: 20px;
+}
+h5 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    color: rgb(255, 255, 255, .7);
+}
+h6 {
+    font-family: 'sans-serif';
+    font-size: 85px;
+    font-weight: 525;
+    margin: -20px 0px 0px 0px;
+    color: rgb(255, 255, 255, .7);
+}
+p {
+    margin-top: 10px;
+}
+nav {
+    color: lightgrey;
+}
+@media (min-width: 1101px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 300px auto auto auto auto auto 320px 175px;
+        grid-gap: 0px;
+        grid-template-areas: 
+        "hh hh hh hh hh hh hh hh m1 m1 m1 m1"
+        "c1 c1 c1 c1 c1 c1 c1 c1 m2 m2 m2 m2"
+        "c2 c2 c2 c2 c2 c2 c2 c2 m3 m3 m3 m3"
+        "c3 c3 c3 c3 c3 c3 c3 c3 m4 m4 m4 m4"
+        "au au au au au au au au au au au au"
+        "au au au au au au au au au au au au"
+        "au au au au au au au au au au au au"
+        "ff ff ff ff ff ff ff ff ff ff ff ff"
+    }
+}
+a {
+    color: rgb(71, 71, 71, 0.8);
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+.m2 > li {
+    padding: 0px 0px 25px 0px;
+    list-style: none;
+}
+.m3 > li {
+    border-top: solid 1px rgb(180, 180, 180);
+    list-style: none;
+}
+hr {
+    opacity: .3;
+}
+div.header {
+    grid-area: hh;
+    color: #fff;
+    font-size: 150%;
+    line-height: 100%;
+    position: relative;
+    display: block;    
+    background: #2d6360 50% 0 url(http://www.csszengarden.com/214/huntington.jpg);
+    background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background-size: cover; 
+}
+.header::before {
+    display: inline-block;
+    position: relative;
+    margin: -20px 20px 0 0;
+    padding: 0;
+    top: 100px;
+    left: 100px;
+    content: "";
+    width: 120px;
+    height: 120px;
+    background: url(http://www.csszengarden.com/214/enso.svg);
+    background-size: 100%;
+    opacity: 0.9;
+ }
+.menu1 {
+    grid-area: m1;
+    background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    margin: 0;
+    padding: 0;
+}
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allDesigns {
+    background-color: rgba(96, 139, 127, 0.4);
+    /* margin: 15px 0px 0px 0px; */
+    padding: 0px 20px;   
+    height: 60px;
+    width: auto;
+}
+.previousDesigns, .nextDesigns {
+    background-color: rgba(96, 139, 127, 0.4);
+    /* background-color: white; */
+    /* margin: 0px 0px 0px 0px; */
+    margin: 1px;
+    height: 60px;
+    width: 60px;
+}
+.menu2 {
+    grid-area: m2;
+    margin: 0;
+    color: rgb(194, 194, 194);
+    font-size: 14px;
+    padding: 30px 80px 60px 80px;
+    background-color: rgb(224, 235, 232);
+}
+.menu3 {
+    grid-area: m3;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 18px;
+    line-height: 400%;
+    padding: 100px 100px 50px 50px;
+    background-color: rgba(138,188,159,0.6);
+    background-image: url(http://www.csszengarden.com/214/bamboo.png);
+}
+.menu4 {
+    grid-area: m4;
+    background-color: rgb(224, 235, 232);
+}
+.content2, .content3 {
+    font-size: 16px;
+    padding: 30px 50px 65px 100px;
+}
+.content1 {
+    grid-area: c1;
+    padding: 55px 50px 65px 100px;
+    font-size: 16px;
+    line-height: 200%;
+}
+.content2 {
+    grid-area: c2;
+    line-height: 200%;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+}
+.content3 {
+    grid-area: c3;
+    line-height: 200%;
+}
+.author > a {
+    color: rgb(194, 223, 220);
+    font-size: 32px;
+    text-decoration: none;
+    font-style: normal;
+}
+.author > a:hover {
+    text-decoration: underline;
+}
+.author {
+    grid-area: au;
+    padding: 100px 150px 80px 150px;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: rgba(153, 187, 184, 0.85);
+    opacity: 0.8;
+    text-align: center;
+    font-size: 32px;
+    font-style: italic;
+    line-height: 200%;
+    background-color: #217179;
+    background-image: url(http://www.csszengarden.com/214/koi.jpg);    
+}
+/* HC=a  GH=g CC=c 5 3 c g a  */
+.footer {
+    grid-area: ff;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 175px;
+    font-family: 'verdemoderna';
+    font-size: 72px;
+    /* opacity: .5; */
+    color: rgba(255, 255, 255, 0.504);
+    background-color: #134347;
+    text-align: center;
+}
+@media (max-width: 1100px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1);
+        grid-template-rows: 160px 70px auto auto auto auto 125px auto auto;
+        grid-gap: 0px;
+        grid-template-areas: 
+        "hh"
+        "m1"
+        "c1"
+        "c2"
+        "c3"
+        "au"
+        "ff"
+        "m2"
+        "m3"
+    }
+    .header {
+        text-align: center;
+        font-family: 'Julius Sans One', sans-serif;
+        margin-top: 0px;
+    }
+    .header::before {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+        top: 50px;
+        left: -180px;
+        content: "";
+        width: 80px;
+        height: 80px;
+        margin: -20px 0px 0px 0px;
+        background: url(http://www.csszengarden.com/214/enso.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        opacity: 0.7;
+     }
+    h1 {
+        margin: -10px 0px 0px -150px;
+        padding: -10px 60px 0px 0px;
+        font-size: 36px;
+    }     
+    h2 {
+        padding: 10px 60px 0px 0px;
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+        padding: 0px 10px 350px 220px;
+        margin: 20px 0px 0px -150px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    h6 {
+        font-family: 'sans-serif';
+        font-size: 80px;
+        margin: -15px 0px 0px 0px;
+        padding: 10px;    
+    }
+    .allDesigns {
+        margin: 0px 10px 0px 10px;
+        padding: 0px 20px 0px 20px;   
+        height: 60px;
+    }
+    .author > a {
+        color: rgb(215, 243, 240);
+        font-size: 24px;
+    }
+    .author {
+        font-size: 24px;
+        padding: 50px 70px 50px 70px;
+    }
+    .menu1 {
+        grid-area: m1;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        opacity: .9;
+        padding: 0;
+        margin: 0;
+    }
+    .menu2, .menu3 {
+        column-count: 2;
+    }
+    .previousDesigns .nextDesigns {
+        position: absolute;
+        padding: 0px 10px 0px 10px;    
+        height: 20px;
+        width: 20px;
+    }
+    .content1, .content2, .content3 {
+        padding: 20px 60px 20px 60px;
+        font-size: 13.5px;
+        line-height: 180%;
+    }
+    .footer {
+        padding: 40px 75px;
+        font-size: 48px;
+        /* opacity: .5; */
+        text-align: center;
+    }}
+/* @font-face {
+    font-family: 'Julius Sans One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Julius Sans One'), local('JuliusSansOne-Regular'), url(resources/julius.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Libre Italic';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url(resources/baskervillecursive.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(resources/baskerville.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(resources/baskerville.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+} */
